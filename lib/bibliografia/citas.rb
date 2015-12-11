@@ -1,7 +1,7 @@
-require "./lista.rb"
-require "./libro.rb"
-require "./art_revista.rb"
-require "./art_periodico.rb"
+#require "./lista.rb"
+#require "./libro.rb"
+#require "./art_revista.rb"
+#require "./art_periodico.rb"
 class Citasbibliograficas
     
     attr_reader:l_citas
@@ -24,18 +24,9 @@ class Citasbibliograficas
        @l_citas.mostrar
     end
     
-    def to_s
-    formato_final =""
-    @l_citas.each do |elemento|
-      print "\t"
-      formato_final += elemento.to_s
-      print "\n"
-    end
-    formato_final
-    end
   
 end
-
+=begin
 libro1=Libro.new("Libro",["Dave Thomas Berd"," Andy Hunt", "Chad Fowler"],[" ISBN-13: 978-1937785499.
 				ISBN-10: 1937785491."],"Programming Ruby 1.9 & 2.0: The Pragmatic Programmers’
 				Guide", "(July 7, 2013)","Pragmatic Bookshelf;"," 4 edition","1","WIKIPEDIA")
@@ -53,3 +44,4 @@ list1.inserta([libro1,revista1,periodico1])
 cita1=Citasbibliograficas.new(list1)
 cita1.ordena
 cita1.mostrar_cita
+=end

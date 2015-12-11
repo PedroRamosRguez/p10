@@ -1,5 +1,5 @@
 #clase que representa la lista enlazada
-require "./referencia.rb"
+#require "./referencia.rb"
 Node=Struct.new(:value,:next,:before)
 class Lista
     include Enumerable
